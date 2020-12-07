@@ -1,4 +1,4 @@
-# axios secondary packaging, adding loading configuration
+# axios封装使用， 增加了headers，loading动画配置
 
 ## Project setup
 ```
