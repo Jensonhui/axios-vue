@@ -1,18 +1,34 @@
-# Async await encapsulation axios
+# axios secondary packaging, adding loading configuration
 
-## 使用async await 封装 axios
-
-### 项目启动
+## Project setup
 ```
 npm install
-
-npm run serve
 ```
 
-### 开源接口
+### Compiles and hot-reloads for development
 ```
-cnode.js社区提供
+npm run dev
+```
 
-传送门: https://cnodejs.org/api
 
+### For example
+```
+/**
+ * @TODO: Axios封装
+ * @author: Jensonhui
+ * @date: 2019-06-7 15:53:37
+ */
+
+async expressFoo () {
+  try {
+    const res = await this.$post(
+      'http://www.baidu.com' // httpurl,
+      { name: 'Jensonhui' } // value,
+      { isLoading: false } // option
+    )
+    const { code, message, object: data } = res.data
+  } catch (e) {
+    console.log(e)
+  }
+}
 ```
